@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project Name
 Exercice for Coach
 
@@ -15,3 +16,6 @@ Only can use Bootstrap CSS for framework, only did the front of the page. No CSS
 ## Creators
 
 Jessy
+=======
+# PBA-Sofian-Jessy
+>>>>>>> 78f812e2a063360d12bc9788b93fe4011ac9a4c8
