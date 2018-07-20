@@ -97,41 +97,73 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-.textorange {
-  color: #fc561f;
+.pointer {
+  cursor: pointer;
 }
 
-.backgroundorange {
-  background: #fc561f;
+.h1little {
+  font-size: 17px;
 }
 
-.borderorange {
-  border-color: #fc561f;
+.bgnoir {
+  background: #1d1d1e;
 }
 
-.backgroundnoir {
-  background: #293540;
+.tch {
+  color: white;
+}
+.tch:hover {
+  color: #da4047;
 }
 
-.backgroundbleu {
-  background: #7cbce2;
-}
-
-.textbleu {
-  color: #7cbce2;
-}
-
-.backgroundgris {
-  background: #e1ebf5;
+.bgh:hover {
+  background-color: #da4047;
 }
 
 
+input[type="search"] {
+  background: inherit;
+  border: 5px solid white;
+  border-radius: 0px;
+  height: 40px;
+}
 
+input[type="search"]:hover,
+input[type="search"]:focus {
+  background-color: inherit;
+  border: 5px solid #da4047;
+}
 
+#exampleSelect1 {
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+  background-color: #1d1d1e;
+  border: none;
+  color:white;
+}
 
+#exampleSelect1:hover {
+  color: #da4047;
+}
 
+@font-face {
+  font-family: "Lovelo";
+  src: url(../fontfamily/Lovelo.otf);
+}
 
+.familyfont {
+  font-family: "Lovelo";
+}
+
+@font-face {
+  font-family: "pba";
+  src: url(../fontfamily/pba.ttf);
+}
+
+.familypba {
+  font-family: "pba" !important;
+}
 
 
 
