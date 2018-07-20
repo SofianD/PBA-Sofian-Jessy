@@ -109,12 +109,23 @@ textarea {
   background: #1d1d1e;
 }
 
+.bggris {
+  background: #e9e9e9;
+}
+
+.bgwhite2 {
+  background: white;
+}
+
 .tch {
   color: white;
 }
+.tch2:hover,
 .tch:hover {
+  transition: color 0.3s;
   color: #da4047;
 }
+
 
 .bgh:hover {
   background-color: #da4047;
@@ -165,8 +176,24 @@ input[type="search"]:focus {
   font-family: "pba" !important;
 }
 
+div[class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 pt-5 pb-5 mx-auto pointer tch2"] {
+  height: 400px;
+}
 
+p[class="tch2 bg-light text-center pt-4 pb-4"] {
+  display: block;
+  margin: auto;
+  margin-top: 70%;
+  width: 60%;
+}
+p[class="bg-light mx-auto col-8 pl-4 pt-4 pb-4"] {
+  margin-top: 150px;
+}
 
+div[class="pt-5 pb-5 pointer tch2"] {
+  width:20%;
+  height: 516px;
+}
 
 
 /* ==========================================================================
