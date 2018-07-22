@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # Project Name
-Exercice for Coach
+PBA-Sofian-Jessy
 
 ## Contributing
 1. Fork it!
@@ -11,11 +10,8 @@ Exercice for Coach
 
 ## Restriction
 
-Only can use Bootstrap CSS for framework, only did the front of the page. No CSS Line !
+Did a reconstitution of the web site PBA-Lille We can use CSS / HTML / Bootstrap
 
 ## Creators
 
-Jessy
-=======
-# PBA-Sofian-Jessy
->>>>>>> 78f812e2a063360d12bc9788b93fe4011ac9a4c8
+Sofian / Jessy

@@ -97,8 +97,35 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  /* ############################"" PART OF VISITE.HTML ############################"" */
+  /* ############################"" PART OF VISITE.HTML ############################"" */
+  /* ############################"" PART OF VISITE.HTML ############################"" */
+  /* ############################"" PART OF VISITE.HTML ############################"" */
+  /* ############################"" PART OF VISITE.HTML ############################"" */
+  /* ############################"" PART OF VISITE.HTML ############################"" */
+  /* ############################"" PART OF VISITE.HTML ############################"" */
+
 .pointer {
   cursor: pointer;
+}
+
+.borderbottom {
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin-left: 10%;
+}
+
+input[value="PBA"],
+a[class="nav-link d-lg-none pb-4"],
+a[class="nav-link d-lg-none pt-4 pb-4"] {
+  margin-left: 10%;
+}
+
+input[value="PBA"] {
+  width: 80%;
+  max-width: 250px;
+  border: 5px solid white;
+  background-color: inherit;
 }
 
 .h1little {
@@ -117,13 +144,29 @@ textarea {
   background: white;
 }
 
+.tcrose {
+  color: #da4047;
+}
+
 .tch {
   color: white;
 }
+
 .tch2:hover,
 .tch:hover {
   transition: color 0.3s;
   color: #da4047;
+}
+
+.tchborder:hover {
+  transition: border 0.3s;
+  border-color: #da4047;
+}
+
+.searchfor {
+  margin-left: -30px;
+  z-index: 1000;
+  position: relative;
 }
 
 
@@ -194,6 +237,107 @@ div[class="pt-5 pb-5 pointer tch2"] {
   width:20%;
   height: 516px;
 }
+
+input[type="image"] {
+  width: 20px;
+}
+
+img[src="img/logo-lille.svg"] {
+  max-width:115px;
+}
+
+#individuel {
+  background:url(../img/1photo.jpg);
+  background-size: 100%;
+}
+
+#groupe {
+  background:url(../img/2photo.jpg);
+  background-size: 100%;
+}
+
+#famille {
+  background:url(../img/3photo.jpg);
+  background-size: 100%;
+}
+
+#etudiant {
+  background:url(../img/4photo.jpg);
+  background-size: 100%;
+}
+
+#enseignant {
+  background:url(../img/5photo.jpg);
+  background-size: 100%;
+}
+
+#bg {
+  background:url(../img/beauxgosse.jpg);
+  background-size: 100%;
+}
+
+#lgb {
+  background:url(../img/legrandbleu.jpg);
+  background-size: 100%;
+}
+
+#love {
+  background:url(../img/love.jpg);
+  background-size: 100%;
+}
+
+#table {
+  background:url(../img/table.jpg);
+  background-size: 100%;
+}
+
+#ange {
+  background:url(../img/angedemon.jpg);
+  background-size: 100%;
+} 
+
+#histb {
+  background:url(../img/histoirebete.jpg);
+  background-size: 100%;
+}
+
+#histb {
+    background: url(../img/histoirebete.jpg);
+    background-size: 100%;
+}
+
+#blonde {
+  background:url(../img/blonde.jpg);
+  background-size: 100%;
+}
+
+#art {
+  background:url(../img/architecture.jpg);
+  background-size: 100%;
+}
+
+#oeuvres4 {
+  background:url(../img/oeuvres.jpg);
+  background-size: 100%;
+}
+
+#oeuvres8 {
+  background:url(../img/8oeuvres.jpg);
+  background-size: 100%;
+}
+
+#oeuvres12 {
+  background:url(../img/12oeuvres.jpg);
+  background-size: 100%;
+}
+
+  /* ############################"" END PART OF VISITE.HTML ############################"" */
+  /* ############################"" END PART OF VISITE.HTML ############################"" */
+  /* ############################"" END PART OF VISITE.HTML ############################"" */
+  /* ############################"" END PART OF VISITE.HTML ############################"" */
+  /* ############################"" END PART OF VISITE.HTML ############################"" */
+  /* ############################"" END PART OF VISITE.HTML ############################"" */
+  /* ############################"" END PART OF VISITE.HTML ############################"" */
 
 
 /* ==========================================================================
