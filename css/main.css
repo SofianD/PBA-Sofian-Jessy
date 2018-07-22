@@ -296,9 +296,14 @@ img[src="img/logo-lille.svg"] {
   background-size: 100%;
 } 
 
-#hbete {
+#histb {
   background:url(../img/histoirebete.jpg);
   background-size: 100%;
+}
+
+#histb {
+    background: url(../img/histoirebete.jpg);
+    background-size: 100%;
 }
 
 #blonde {
