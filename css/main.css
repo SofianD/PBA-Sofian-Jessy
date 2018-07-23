@@ -152,6 +152,10 @@ input[value="PBA"] {
   color: white;
 }
 
+.tch5 {
+  color: grey;
+}
+
 .tch2:hover,
 .tch:hover {
   transition: color 0.3s;
@@ -354,16 +358,8 @@ img[src="img/logo-lille.svg"] {
    appearance: none;
 }
 
-
-.agenda1,
-.agenda2,
-.agenda3,
-.agenda4 {
-
-}
-
 div[class="position-absolute"] {
-  margin-top: 120px;
+  margin-top: 70px;
   margin-left: 70%;
 }
 
@@ -472,7 +468,46 @@ i[class="fas fa-square-full fa-1x blue"]{
   text-align: right;
 }
 
+li[class="page-item position-absolute"]{
+  margin-left: 60%;
+}
 
+.page-link {
+  border: none;
+}
+
+.pagination a {
+  color: black;
+  font-family: "familyfont";
+}
+
+.pagination a:hover {
+  color: #da4047;
+  transition: color 0.3s;
+}
+
+.next {
+  border: 4px solid black;
+  font-weight: bold;
+}
+
+.next:hover {
+    border: 4px solid black;
+    background: white;
+}
+
+a[class="page-link font-weight-bold"] {
+  color: #da4047;
+}
+
+.firstfooter li,
+.forthfooter li {
+  list-style: none;
+}
+
+.lignefooter {
+  border-bottom: 1px solid white;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
