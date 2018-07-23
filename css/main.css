@@ -354,6 +354,14 @@ img[src="img/logo-lille.svg"] {
    appearance: none;
 }
 
+
+.agenda1,
+.agenda2,
+.agenda3,
+.agenda4 {
+
+}
+
 div[class="position-absolute"] {
   margin-top: 120px;
   margin-left: 70%;
@@ -363,24 +371,29 @@ div[class="position-absolute"] {
   background:url(../img/agenda1.jpg);
   background-size: 100%;
   height: 415px;
+  width: 100%;
+  background-repeat: no-repeat;
 }
 
 .agenda2 {
   background:url(../img/agenda2.jpg);
   background-size: 100%;
   height: 415px;
+  background-repeat: no-repeat;
 }
 
 .agenda3 {
   background:url(../img/agenda3.jpg);
   background-size: 100%;
   height: 415px;
+  background-repeat: no-repeat;
 }
 
 .agenda4 {
   background:url(../img/agenda4.jpg);
   background-size: 100%;
   height: 415px;
+  background-repeat: no-repeat;
 }
 
 .textagenda1 {
@@ -393,6 +406,70 @@ div[class="position-absolute"] {
 
 .textagenda1 h3 {
   font-size: 15px;
+}
+
+.vis{
+  color: green;
+}
+
+.jp{
+  color: blue;
+}
+
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0"],
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat2"]{
+  border-top: 1px solid green;
+  font-size: 20px;
+}
+
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat3"],
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat4"]{
+  border-top: 1px solid blue;
+  font-size: 20px;
+}
+
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0"] h3,
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat2"] h3,
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat3"] h3,
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat4"] h3{
+  font-size: 25px;
+}
+
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0"] h4,
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat2"] h4,
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat3"] h4,
+div[class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat4"] h4 {
+  font-size: 23px;
+}
+
+div[class="row col-12 mr-0 ml-0 pl-0 pr-0 max-auto"] {
+  margin-top: 2%;
+}
+
+i[class="fas fa-square-full"]{
+  float: right;
+  color: green;
+  margin-top: -1px;
+}
+
+i[class="fas fa-square-full fa-1x"]{
+  color: green;
+  width: 100%;
+  float: right;
+  text-align: right;
+}
+
+i[class="fas fa-square-full blue"]{
+  float: right;
+  color: blue;
+  margin-top: -1px;
+}
+
+i[class="fas fa-square-full fa-1x blue"]{
+  color: blue;
+  width: 100%;
+  float: right;
+  text-align: right;
 }
 
 
