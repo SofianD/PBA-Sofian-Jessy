@@ -249,26 +249,31 @@ img[src="img/logo-lille.svg"] {
 #individuel {
   background:url(../img/1photo.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #groupe {
   background:url(../img/2photo.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #famille {
   background:url(../img/3photo.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #etudiant {
   background:url(../img/4photo.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #enseignant {
   background:url(../img/5photo.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #bg {
