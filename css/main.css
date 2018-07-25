@@ -508,6 +508,227 @@ a[class="page-link font-weight-bold"] {
 .lignefooter {
   border-bottom: 1px solid white;
 }
+
+
+
+
+
+
+
+
+/*==============================================================================================================================================*/
+/*==============================================================================================================================================*/
+/*==============================================================================================================================================*/
+/*==============================================================================================================================================*/
+/*==============================================================================================================================================*/
+
+/*footer*/
+.bckgrnd-foot 
+{ 
+  background-color: #232223; 
+  color: #fff; 
+}
+          
+.bckgrnd-red 
+{ 
+  background-color: #da4047;
+  color: #fff; 
+  transition: background-color, color, 0.5s; 
+}
+          
+.bckgrnd-red:hover 
+{ 
+  background-color: white; 
+  color: #da4047; 
+}
+          
+.txt-center 
+{ 
+  text-align: center;
+}
+          
+.prefooter-pad 
+{ 
+  padding: 20px; 
+}
+
+
+.bckgrnd-foot a, .bckgrnd-foot h3
+{
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.bckgrnd-foot p
+{
+  font-size: 12px;
+}
+
+.bordera
+{
+  display: block; 
+  border: 5px solid white; 
+  line-height: 60px; 
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  transition-property: color, border;
+  transition-duration: 0.5s; 
+}
+
+.bordera:hover
+{
+  text-decoration: none;
+}
+
+.bckgrnd-red:hover .bordera
+{
+  color: #da4047;
+  border: 5px solid #da4047;
+}
+
+#uniquement-sur-index a
+{ 
+  display: block; 
+  border: 5px solid black; 
+  line-height: 90px; 
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  transition-property: color, border;
+  transition-duration: 0.5s;
+  font-size: 11px; 
+} /*uniquement en dessous de lg*/
+
+#uniquement-sur-index a:hover
+{
+   color: #da4047;
+  border: 5px solid #da4047;
+}
+
+.size-1px
+{
+  height: 1px;
+  background-color: #fff;
+}
+
+.flex-container 
+{
+  display: inline-flex;
+  justify-content: space-between;
+  line-height: 60px;
+  width: 100%;
+  font-family: Lovelo;
+}
+
+.grid-container 
+{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 1;
+  width: 100%;
+}
+
+
+.foot-end-right
+{
+  grid-column: 4;
+  grid-row: 1;
+  line-height: 49.8px;
+  text-align: center;
+}
+
+.foot-end-right-2
+{
+  grid-column: 5;
+  grid-row: 1;
+  text-align: right;
+}
+
+.pad-bot-footend
+{
+  padding-bottom: 40px;
+}
+
+.pad-top-footend
+{
+  padding-top: 30px;
+}
+
+
+
+@media screen and (min-width: 768px)
+{
+  .bordera
+  {
+    border: none;
+    line-height: normal;
+    margin-top: 0;
+  }
+
+  .bckgrnd-red:hover .bordera 
+ {
+    border: none;
+ }
+
+}
+
+
+@media screen and (min-width: 992px)
+{
+  .bordera
+  {
+    border: none;
+    line-height: normal;
+    margin-top: 0;
+  }
+
+  .bckgrnd-red:hover .bordera 
+ {
+    border: none;
+ }
+
+  #uniquement-sur-index a 
+  { 
+    border: 5px solid white;
+  }
+
+  #uniquement-sur-index a:hover
+  {
+    border: 5px solid white;
+  }
+
+}
+
+
+@media screen and (min-width: 1280px)
+{
+  .bordera
+  {
+    border: none;
+    line-height: normal;
+    margin-top: 0;
+  }
+
+  .bckgrnd-red:hover .bordera 
+ {
+    border: none;
+ }
+
+  #uniquement-sur-index a 
+  { 
+    border: 5px solid white;
+  }
+
+  #uniquement-sur-index a:hover
+  {
+    border: 5px solid white;
+  }
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
