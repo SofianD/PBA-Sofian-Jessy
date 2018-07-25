@@ -1,22 +1,557 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Palais des Beaux Arts de Lille</title>
+  <title>Agenda- Palais des Beaux Arts de Lille</title>
   <meta charset="utf-8">
   <meta name="description" content="Palais des beaux arts de lille">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <link href="/bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
-
 <body>
 
+  <nav class="bgnoir navbar navbar-expand-lg navbar-dark position-fixed w-100" style="z-index:100">
+      <a class="navbar-brand h1little col-1 col-xs-1 col-sm-1 col-md-3 d-none d-lg-block mt-3" href="index.html"><p class="tch">PALAIS BEAUX-ARTS LILLE</p></a>
+    <div class="leftmobile">
+      <a class="navbar-brand h1little pl-0 d-lg-none d-inline" href="index.html">PBA LILLE</a>
+      <p class="textmobile text-white d-lg-none text-left d-inline">Agenda</p>
+    </div>
+    <div class="allrightmobile">
+        <i class="fas fa-search pointer d-lg-none tch"></i>
+        <i class="far fa-question-circle pointer d-lg-none tch ml-2 mr-2"></i>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto mt-3">
+        <li class="nav-item">
+          <a class="nav-link d-none d-lg-block" href="#"><p class="tch font-weight-bold familyfont">COLLECTIONS</p></a>
+          <a class="nav-link d-lg-none pb-4" href="#"><i class="fas fa-th tch familyfont"> Collections</i></a>
+          <div class="borderbottom d-lg-none"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-none d-lg-block" href="visiter.html"><p class="font-weight-bold familyfont tch">VISITER</p></a>
+          <a class="nav-link d-lg-none pt-4 pb-4" href="visiter.html"><i class="fas fa-random tch familyfont tch"> Visiter</i></a>
+          <div class="borderbottom d-lg-none"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-none d-lg-block" href="agenda.html"><p class="font-weight-bold familyfont tcrose">AGENDA</p></a>
+          <a class="nav-link d-lg-none pt-4 pb-4" href="agenda.html"><i class="fas fa-calendar-alt familyfont tcrose"> Agenda</i></a>
+          <div class="borderbottom d-lg-none"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-none d-lg-block" href="#"><p class="tch font-weight-bold familyfont">INFOS</p></a>
+          <a class="nav-link d-lg-none pt-4 pb-4" href="#"><i class="fas fa-info-circle tch familyfont"> Infos</i></a>
+          <div class="borderbottom d-lg-none"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-lg-none pt-4 pb-4" href="#"><i class="fas fa-envelope tch familyfont"> Contactez nous</i></a>
+          <div class="borderbottom d-lg-none"></div>
+        </li>
+      </ul>
+      <input type="button" value="PBA" class="mt-2 tch pointer tchborder d-lg-none"/>
+      <form class="d-none d-lg-block mx-auto form-inline col-lg-3 col-xl-3">
+        <input class="form-control col-lg-10 col-xl-10 pl-1 text-white" type="search" aria-label="Search"/>
+        <span class="searchfor fas fa-search tch"></span>
+      </form>
+      <select class="d-none d-lg-block form-control mx-auto col-9 col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-2 pointer" id="exampleSelect1">
+        <option>Français</option>
+        <option>English</option>
+        <option>Dush</option>
+      </select>
+      <img src="img/logo-lille.svg" alt="Logo de lille" class="d-none d-lg-block mx-auto col-2 col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"/>
+    </div>
+  </nav>
 
+  <div class="row m-0 pt-5">
+    <div class="centerdiv mx-auto text-center col-12 col-lg-4">
+      <span class="pt-5 mt-2 fas fa-calendar-alt fa-5x"></span>
+      <h2 class="pt-2">Agenda du musée</h2><br>
+      <i class="fas fa-arrow-down fa-2x"></i>
+     <select class="d-lg-none form-control familyfont mt-2 mx-auto pr-0 pointer" id="sel1">
+       <option>TOUTES LES ACTUALITES</option>
+       <option>EXPOSITION</option>
+       <option>VISITE</option>
+       <option>INVITE</option>
+     </select>
+   </div>
+     <div class="position-absolute">
+       <select class="d-none d-lg-block form-control familyfont mt-5 mx-auto pointer" id="sel2">
+         <option>TOUTES LES ACTUALITES</option>
+         <option>EXPOSITION</option>
+         <option>VISITE</option>
+         <option>INVITE</option>
+       </select>
+     </div>
+  </div>
+
+  <div class="d-lg-none row mt-4 col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda1 col-12">
+    </div>
+    <div class="textagenda1 col-11 mt-2 mx-auto">
+      <h3 class="font-weight-bold">LE 19 JUILLET 2018 - <span class="vis">VISITE</span></h3>
+      <h4>LECON D'ARTS</h4>
+      <p class="font-weight-bold">A 14h30 4€ + Droits d'entrée.</p>
+      <p>Pour tous ceux qui veulent s'initier à l'histoire de l'art.</p>
+      <p class="font-weight-bold">Sur le thème: L'art de la suggestion</p>
+    </div>
+  </div>
+
+  <div class="d-lg-none mt-4 row col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda2 col-12">
+    </div>
+    <div class="textagenda1 col-11 mt-2 mx-auto">
+      <h3 class="font-weight-bold">LE 20 JUILLET 2018 - <span class="vis">VISITE</span></h3>
+      <h4>VISITE PRESTO</h4>
+      <p class="font-weight-bold">A 12 h 30. 1 € + droit d’entrée - Durée : 30 mn .</p>
+      <p>Un tête à tête avec une œuvre différente chaque semaine.</p>
+      <p class="font-weight-bold">Hercule combattant Acheloüs, Antoine Coypel</p>
+    </div>
+  </div>
+
+  <div class="d-lg-none mt-4 row col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda3 col-12">
+    </div>
+    <div class="textagenda1 col-11 mt-2 mx-auto">
+      <h3 class="font-weight-bold">LE 22 JUILLET 2018 - <span class="jp">JEUNE PUBLIC</span></h3>
+      <h4>VISITE GUIDEE</h4>
+      <p class="font-weight-bold">À 14 h 30. 8 €/ 4 €. Inscriptions: reservationpba@mairie-lille.fr.</p>
+      <p>Une visite privilégiée dans la salle où sont actuellement restaurés les plans-reliefs. (Attention! Nombre de places limité!)</p>
+      <p class="font-weight-bold">Un point de vue inédit sur ces objets, leur histoire et leurs secrets...</p>
+    </div>
+  </div>
+
+  <div class="d-lg-none mt-4 row col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda4 col-12">
+    </div>
+    <div class="textagenda1 col-11 mt-2 mx-auto">
+      <h3 class="font-weight-bold">LE 22 JUILLET 2018 - <span class="jp">JEUNE PUBLIC</span></h3>
+      <h4>VISITE A CROQUER</h4>
+      <p class="font-weight-bold">À 15 h 30. 8 €/ 4 € - Gratuit - de 18 ans.</p>
+      <p>Une visite familiale pour découvrir le musée en compagnie d'un plasticien.</p>
+      <p class="font-weight-bold">Croquis, modelage, découpage-collage... une initiation ludique aux arts plastiques.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="d-none d-lg-block">
+  <div class="row mt-4 col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda1 col-2 mx-auto pl-0 pr-0">
+    </div>
+    <div class="textagenda1 col-8 mx-auto pl-0 pr-0">
+      <i class="fas fa-square-full"></i>
+      <i class="fas fa-square-full"></i>
+      <div class="">
+        <i class="fas fa-square-full fa-1x"></i>
+      </div>
+      <h3 class="font-weight-bold pt-4">LE 19 JUILLET 2018 - <span class="vis">VISITE</span></h3>
+      <h4>LECON D'ARTS</h4>
+      <p class="font-weight-bold">A 14h30 4€ + Droits d'entrée.</p>
+      <p>Pour tous ceux qui veulent s'initier à l'histoire de l'art.</p>
+      <p class="font-weight-bold">Sur le thème: L'art de la suggestion</p>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda2 col-2 mx-auto pl-0 pr-0">
+    </div>
+    <div class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat2">
+      <i class="fas fa-square-full"></i>
+      <i class="fas fa-square-full"></i>
+      <div class="">
+        <i class="fas fa-square-full fa-1x"></i>
+      </div>
+      <h3 class="font-weight-bold pt-4">LE 20 JUILLET 2018 - <span class="vis">VISITE</span></h3>
+      <h4>VISITE PRESTO</h4>
+      <p class="font-weight-bold">A 12 h 30. 1 € + droit d’entrée - Durée : 30 mn .</p>
+      <p>Un tête à tête avec une œuvre différente chaque semaine.</p>
+      <p class="font-weight-bold">Hercule combattant Acheloüs, Antoine Coypel</p>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row mt-5 col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda3 col-2 mx-auto pl-0 pr-0">
+    </div>
+    <div class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat3">
+      <i class="fas fa-square-full blue"></i>
+      <i class="fas fa-square-full blue"></i>
+      <div class="">
+        <i class="fas fa-square-full fa-1x blue"></i>
+      </div>
+      <h3 class="font-weight-bold pt-4">LE 22 JUILLET 2018 - <span class="jp">JEUNE PUBLIC</span></h3>
+      <h4>VISITE GUIDEE</h4>
+      <p class="font-weight-bold">À 14 h 30. 8 €/ 4 €. Inscriptions: reservationpba@mairie-lille.fr.</p>
+      <p>Une visite privilégiée dans la salle où sont actuellement restaurés les plans-reliefs. (Attention! Nombre de places limité!)</p>
+      <p class="font-weight-bold">Un point de vue inédit sur ces objets, leur histoire et leurs secrets...</p>
+    </div>
+  </div>
+</div>
+
+<div class="d-none d-lg-block">
+  <div class="row col-12 mr-0 ml-0 pl-0 pr-0 max-auto">
+    <div class="agenda4 col-2 mx-auto pl-0 pr-0">
+    </div>
+    <div class="textagenda1 col-8 mx-auto pl-0 pr-0 agendat4">
+      <i class="fas fa-square-full blue"></i>
+      <i class="fas fa-square-full blue"></i>
+      <div class="">
+        <i class="fas fa-square-full fa-1x blue"></i>
+      </div>
+      <h3 class="font-weight-bold pt-4">LE 22 JUILLET 2018 - <span class="jp">JEUNE PUBLIC</span></h3>
+      <h4>VISITE A CROQUER</h4>
+      <p class="font-weight-bold">À 15 h 30. 8 €/ 4 € - Gratuit - de 18 ans.</p>
+      <p>Une visite familiale pour découvrir le musée en compagnie d'un plasticien.</p>
+      <p class="font-weight-bold">Croquis, modelage, découpage-collage... une initiation ludique aux arts plastiques.</p>
+    </div>
+  </div>
+</div>
+
+<nav aria-label="">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link font-weight-bold" href="#">1</a></li>
+    <li class="page-item"><a class="page-link tch3 font-weight-bold" href="#">2</a></li>
+    <li class="page-item"><a class="page-link tch3 font-weight-bold" href="#">3</a></li>
+    <li class="page-item"><a class="page-link tch3 font-weight-bold" href="#">4</a></li>
+    <li class="page-item"><a class="page-link tch3 font-weight-bold" href="#">5</a></li>
+    <li class="page-item"><a class="page-link tch3 font-weight-bold" href="#">6</a></li>
+    <li class="page-item position-absolute d-none d-lg-none">
+      <a class="page-link next" href="#">Suivant</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+<div class="container-fluid d-xl-none bckgrnd-foot pad-top-footend">
+  <!-- METTRE LE BACKGROUND ICI -->
+
+      <div class="container familyfont">
+        
+            <div class="row">
+
+                  <div class="col-8 col-sm-6 col-md-5 col-lg-4 mx-auto p-1">
+
+                        <div class="row">
+              
+              
+                  <div class="col-12">
+                    
+                        <div class="row">
+                          
+                              <div class="offset-1 col-2 col-sm-1 px-0"">
+                                
+                                    <i class="fas fa-info-circle fa-2x tch"></i>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+                              <div class="col-9">
+                                
+                                    <h3>Info pratiques</h3>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+                              
+
+                        </div> <!-- class="row" -->
+                        <div class="row">
+                              <p class="offset-1">
+                                
+                                  OUVERT : Lun. 14h - 18h,<br>
+
+                                  Mer. > Dim. 10h - 18h. Fermé le mardi.<br>
+
+                                  TARIF PLEIN 7 € /TARIF RÉDUIT 4 €<br><br>
+
+                                  <i class="fas fa-map-marker-alt tch"></i> Place de la République 59000 Lille
+
+                              </p>
+
+                        </div> <!-- class="col-xs-12" (<p>) -->
+
+                  </div><!--  class="col-xs-12 col-lg-3" -->
+
+
+
+                  <div class="col-12">
+                    
+                        <div class="row">
+                          
+                              <div class="offset-1 col-2 col-sm-1" style="padding: 0 !important;">
+                                
+                                    <i class="fas fa-home fa-2x tch"></i>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+
+                              <div class="col-9">
+                                
+                                    <h3><a href="" class="tch">Musée</a></h3>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+
+                        </div> <!-- class="row" -->
+
+                        <div class="row">
+                          
+                              <div class="d-none d-xl-block col-12">
+                                    <ul>
+                                      <li><a href="">DEVENIR MÉCÈNE</a></li>
+                                      <li><a href="">SOUTENIR UN PROJET</a></li>
+                                      <li><a href="">ORGANISER UN ÉVÈNEMENT</a></li>
+                                      <li><a href="">ADHÉRER</a></li>
+                                    </ul>
+                            </div>
+
+                        </div> <!-- class="row" -->
+
+                  </div><!--  class="col-xs-12 col-lg-3" --> 
+
+
+
+                  <div class="col-12">
+                    
+                        <div class="row">
+                          
+                              <div class="offset-1 col-2 col-sm-1" style="padding: 0 !important;">
+                                
+                                    <i class="fas fa-id-card fa-2x tch"></i>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+                              <div class="col-9">
+                                
+                                    <h3><a href="" class="tch">PRESSE</a></h3>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+
+                        </div> <!-- class="row" -->
+                        <div class="row">
+                          
+                              <div class="d-none d-xl-block col-12">
+                                    <ul>
+                                      <li><a href="" class="tch">DOSSIER DE PRESSE</a></li>
+                                      <li><a href="" class="tch">DISCOTHÈQUE</a></li>
+                                    </ul>
+                            </div>
+
+                        </div> <!-- class="row" -->
+
+                  </div><!--  class="col-xs-12 col-lg-3" -->
+
+
+
+                  <div class="col-12">
+                    
+                        <div class="row">
+                          
+                              <div class="offset-1 col-2 col-sm-1" style="padding: 0 !important;">
+                                
+                                   <i class="far fa-envelope fa-2x tch"></i>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+                              <div class="col-9">
+                                
+                                    <h3><a href="" class="tch">NOUS CONTACTER</a></h3>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+
+                        </div> <!-- class="row" -->
+                        
+                        
+
+                  </div><!--  class="col-xs-12 col-lg-3" --> 
+
+                  <div class="col-12">
+                    
+                        <div class="row">
+                          
+                              <div class="offset-1 col-2 col-sm-1" style="padding: 0 !important;">
+                                
+                                   <i class="fas fa-heart fa-2x tch"></i>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+                              <div class="col-9">
+                                
+                                    <h3><a href="" class="tch">VOS ÉMOTIONS</a></h3>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+
+                        </div> <!-- class="row" -->
+                       
+                  </div><!--  class="col-12" -->
+
+
+                  <div class="col-12">
+                    
+                        <div class="row">
+                          
+                              <div class="offset-1 col-11"">
+                                
+                                   <ul style="list-style: none;">
+                                      <li><a href="" class="tch">MENTIONS LÉGALES</a></li>
+                                      <li><a href="" class="tch">LIENS</a></li>
+                                      <li><a href="" class="tch">PLAN DE SITE</a></li>
+                                   </ul>
+
+                              </div> <!-- class="col-xs-6 col-lg-12" -->
+
+                        </div> <!-- class="row" -->
+                       
+                  </div><!--  class="col-12" -->
+
+
+
+
+            </div> <!-- class="row" -->
+                    
+                  </div> <!-- class="col-12" -->
+              
+            </div> <!-- class="row" -->
+
+            <div class="row">
+                          
+                                    <ul class="ml-0 mr-0 pl-0 pr-0 mx-auto">
+                                      <i class="fab fa-twitter-square tch fa-2x pr-1"></i>
+                                      <i class="fab fa-facebook tch fa-2x pr-1"></i>
+                                      <i class="fab fa-instagram tch fa-2x pr-1"></i>
+                                      <i class="fab fa-youtube tch fa-2x pr-1"></i>
+                                      <i class="fab fa-snapchat-square tch fa-2x"></i>
+                                    </ul>
+
+            </div> <!-- class="row" -->
+
+      </div> <!-- class="row" -->
+
+</div> <!-- class="container-fluid" -->
+
+
+
+<div class="container-fluid d-none d-xl-block col-12 p-0 m-0 familyfont bckgrnd-foot">
+        <div class="container">
+              <div class="row bckgrnd-foot">
+    <div class="mt-5 firstfooter col-3 text-left mx-auto">
+      <i class="fas fa-info-circle fa-3x tch"></i>
+      <h4 class="tch">INFOS PRATIQUES</h4>
+      <ul class="ml-0 mr-0 pl-0 pr-0 textagenda1">
+        <li class="text-white">OUVERT : Lun. 14h - 18h,</li>
+        <li class="text-white">Mer. > Dim. 10h - 18h. Fermé le mardi.</li>
+        <li class="text-white">TARIF PLEIN 7 € /TARIF RÉDUIT 4 €</li>
+        <li class="text-white">Place de la République 59000 Lille</li>
+      </ul>
+    </div>
+    <div class="mt-5 secondfooter col-2 text-left mx-auto">
+      <i class="fas fa-home fa-3x tch"></i>
+      <a href=""><h4 class="tch">MUSEE PRIVE</h4></a>
+      <ul class="ml-0 mr-0 pl-0 pr-0 textagenda1">
+        <li class="tch pointer">DEVENIR MECENE</li>
+        <li class="tch pointer">Soutenir un projet</li>
+        <li class="tch pointer">Organiser un événement</li>
+        <li class="tch pointer">Adhérer</li>
+      </ul>
+    </div>
+    <div class="mt-5 troisfooter col-2 text-left mx-auto">
+      <i class="fas fa-id-card fa-3x tch"></i>
+      <a href=""><h4 class="tch">PRESSE</h4></a>
+      <ul class="ml-0 mr-0 pl-0 pr-0 textagenda1">
+        <li class="tch pointer">Dossiers de Presse</li>
+        <li class="tch pointer">Photothèque</li>
+      </ul>
+    </div>
+    <div class="mt-5 forthfooter col-2 text-left mx-auto">
+      <i class="fab fa-hubspot fa-3x tch"></i>
+      <a href=""><h4 class="tch">SUIVEZ-NOUS</h4></a>
+      <ul class="ml-0 mr-0 pl-0 pr-0">
+        <li class="text-white textagenda1">Sur les réseaux sociaux</li>
+        <a href=""><i class="fab fa-twitter-square tch fa-2x pr-1"></i></a>
+        <a href=""><i class="fab fa-facebook tch fa-2x pr-1"></i></a>
+        <a href=""><i class="fab fa-instagram tch fa-2x pr-1"></i></a>
+        <a href=""><i class="fab fa-youtube tch fa-2x pr-1"></i></a>
+        <a href=""><i class="fab fa-snapchat-square tch fa-2x"></i></a>
+      </ul>
+    </div>
+        </div> <!-- class="container" -->
+  </div>
+
+  <div class="container-fluid d-none d-lg-block bckgrnd-foot">
+    
+        <div class="container">
+          
+              <div class="row">
+                    <!-- barre de sérparation -->
+                    <div class="col-12 size-1px"></div> <!-- class="col-12" -->
+
+              </div> <!-- class="row" -->
+
+
+              <div class="row">
+                
+                     <div class="col-12 grid-ft">
+                
+                    <div class="flex-container">
+
+                          <div>
+                            
+                                <a href="" class="tch"><i class="far fa-envelope fa-2x"></i> Nous contacter</a>
+
+                          </div>
+                          <div>
+                            
+                                <a href="" class="tch"><i class="far fa-heart fa-2x"></i> Vos émotions</a>
+
+                          </div>
+                          <div>
+                            
+                                <a href="" class="tch">Mentions Légales</a>
+
+                          </div>
+                          <div>
+                            
+                                <a href="" class="tch">Liens</a>  
+
+                          </div>
+                          <div>
+                            
+                                <a href="" class="tch">Plan de site</a>
+
+                          </div>
+
+                    </div>
+
+                </div> <!-- class="col-12 grid-ft" -->
+
+
+              </div> <!-- class="row" -->
+
+
+      </div> <!-- class="container" -->
+</div><!-- container-fluid -->
+</div>
+<div class="d-none d-xl-block container-fluid bckgrnd-foot">
+      <div class="container pad-bot-footend">
+            <div class="grid-container">
+                  
+                
+                    <div class="foot-end-right textagenda1 familyfont tch5">Site réalisé grâce au mécénat de</div> <!-- class="offset-10 col-1" -->
+
+                    <div class="foot-end-right-2">
+                      
+                          <img src="img/mecene.png" alt="caisse d'épargne" style="width: 100%;">
+
+                    </div> <!-- class="col-1" -->
+
+              
+            </div> <!-- class="row" -->
+      </div> <!-- class="container" -->
+</div> <!-- class="container-fluid" -->
 
 
 <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -24,6 +559,9 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
