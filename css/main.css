@@ -585,7 +585,7 @@ a[class="page-link font-weight-bold"] {
 .fixed-pres-bot
 {
   position: absolute;
-  top: 60vh;
+  top: 68vh;
   width: 100%;
 
 }
@@ -615,7 +615,7 @@ a[class="page-link font-weight-bold"] {
 
 .subtitle-pad 
 { 
-  padding: 30px; 
+  padding: 20px; 
 }
 
 .arrow-pos
@@ -714,6 +714,70 @@ a[class="page-link font-weight-bold"] {
 }
 
 
+.insta-overview
+{
+  display: block; 
+  border: 3px solid white; 
+  /*line-height: 60px; */
+  color: white;
+  text-decoration: none;
+  transition-property: color, border;
+  transition-duration: 0.5s; 
+  font-size: 25px;
+  padding: 10px 20px;
+  max-width: 600px;
+  margin: 30px;
+  vertical-align: middle;
+}
+
+.insta-overview:hover
+{
+  text-decoration: none;
+  color: #da4047;
+  border: 3px solid #da4047;
+}
+
+.pad-de-fdp
+{
+  padding: 1px 10px;
+}
+
+.insta-pic
+{
+  display: inline-flex;
+  list-style: none;
+}
+
+.insta-pic ul
+{
+  list-style: none;
+  font-size: 25px;
+}
+
+.mb_insta
+{
+  margin-bottom: 100px;
+}
+
+.ftsz-20
+{
+  font-size: 25px;
+  /*display: inline-block;*/
+  line-height: 70.75px;
+  
+}
+
+.ftsz-16
+{
+  font-size: 16px;
+}
+.icon-ov-insta
+{
+  /*display: inline-block;*/
+  line-height: 70.75px;
+  vertical-align: middle;
+  margin-right: 25px;
+}
 
 
 /*==============================================================================================================================================*/
@@ -932,6 +996,11 @@ a[class="page-link font-weight-bold"] {
   .prefooter-txt-center
   {
     text-align: left;
+  }
+
+  .big-lh
+  {
+    line-height: 50px;
   }
 }
 
