@@ -520,9 +520,211 @@ a[class="page-link font-weight-bold"] {
 /*==============================================================================================================================================*/
 /*==============================================================================================================================================*/
 /*==============================================================================================================================================*/
+/*index*/
+
+
+
+
+
+
+#player
+{
+  height: 90vh;
+  width: 99.2vw;
+  margin: 0;
+  z-index: -1;
+}
+
+.style-title
+{
+  display: grid;
+  height: 100%;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
+}
+
+.fixed-pres-top
+{
+  position: absolute;
+  top: 30vh;
+  width: 100%;
+
+}
+
+.pad-fixed-pres
+{
+  padding: 40px;
+}
+
+.bgwhite-pres
+{
+  background-color: #fff;
+  height: 17px;
+}
+
+.square-17px
+{
+  width: 17px;
+}
+
+.fixed-pres-title
+{
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+
+}
+
+.fck-w100
+{
+  background-color: blue;
+  
+  
+}
+
+.fixed-pres-bot
+{
+  position: absolute;
+  top: 60vh;
+  width: 100%;
+
+}
+
+.size-title-pres
+{
+  font-size: 50px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.size-title-pres:hover
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.white-txt-color
+{
+  color: white;
+}
+
+.subtitle-size
+{
+  font-size: 30px;
+}
+
+.subtitle-pad 
+{ 
+  padding: 30px; 
+}
+
+.arrow-pos
+{
+  position: relative;
+  bottom: -30px;
+}
+
+.oeuvre-1
+{
+  background-image: url('../img/oeuvre-1.jpg');
+  background-position: center;
+  height: 75vh;
+}
+
+.oeuvre-2
+{
+  background-image: url('../img/oeuvre-2.jpg');
+  background-position: center;
+  height: 75vh;
+}
+
+.oeuvre-3
+{
+  background-image: url('../img/oeuvre-3.jpg');
+  background-position: center;
+  height: 75vh;
+}
+
+.oeuvre-4
+{
+  background-image: url('../img/oeuvre-4.jpg');
+  background-position: center;
+  height: 75vh;
+}
+
+.cart
+{
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  padding: 45px;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.cart-title
+{
+  color: black;
+  font-size: 30px;
+  transition: color 0.5s;
+  width: 100% !important;
+}
+ .cart-title:hover
+ {
+  color: #da4047;
+ }
+
+ .cart-title a
+ {
+  text-decoration: none;
+ }
+ .artist
+ {
+  font-size: 10px;
+ }
+
+.pad-oeuvre
+{
+  padding-top:180px;
+  min-height: 500px;
+}
+
+.txt-prefoot-color
+{
+  color: white;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.bckgrnd-red:hover .txt-prefoot-color
+{
+  text-decoration: none;
+  color: #da4047;
+}
+
+.bckgrnd-red:hover a
+{
+  text-decoration: none;
+}
+
+.prefooter-txt-center
+{
+  text-align: center;
+}
+
+
+
+
 /*==============================================================================================================================================*/
 
 /*footer*/
+
+
+
+
+
+
 .bckgrnd-foot 
 { 
   background-color: #232223; 
@@ -569,12 +771,12 @@ a[class="page-link font-weight-bold"] {
   display: block; 
   border: 5px solid white; 
   line-height: 60px; 
-  align-items: center;
   color: white;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 20px;
   transition-property: color, border;
   transition-duration: 0.5s; 
+  font-size: 25px;
 }
 
 .bordera:hover
@@ -725,6 +927,11 @@ a[class="page-link font-weight-bold"] {
   #uniquement-sur-index a:hover
   {
     border: 5px solid white;
+  }
+
+  .prefooter-txt-center
+  {
+    text-align: left;
   }
 }
 
