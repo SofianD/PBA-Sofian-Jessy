@@ -595,6 +595,9 @@ a[class="page-link font-weight-bold"] {
   font-size: 50px;
   text-decoration: none;
   color: #fff;
+  
+  height: 30vh;
+  width: 500px;
 }
 
 .size-title-pres:hover
@@ -602,6 +605,167 @@ a[class="page-link font-weight-bold"] {
   text-decoration: none;
   color: #fff;
 }
+
+/*end pres pc*/
+
+
+
+
+
+
+
+
+/*start pres mobile*/
+
+.presentation-mb
+{
+  background-image: url('../img/pres--mobile.jpg');
+  background-position: center;
+  height: 600px;
+  padding-top: 100px;
+}
+
+
+
+.td-none:hover
+{
+  text-decoration: none;
+}
+
+.bgwhite-pres-mb
+{
+  background-color: #fff;
+  height: 7px;
+}
+
+.square-17px-mb
+{
+  width: 7px;
+}
+
+.font-h1pres
+{
+  letter-spacing: -1px;
+  font-size: 1.9em;
+}
+
+.mx-400
+{
+  max-width: 350px;
+}
+
+.rcolor
+{
+  color: #fff;
+  transition: color 0.5s;
+}
+.td-none:hover .rcolor
+{
+  color: #da4047;
+}
+
+/*end pres mobile*/
+
+/*slider*/
+
+.h-slider
+{
+  height: 450px;
+}
+
+.h-slider img
+{
+  height: 450px;
+}
+
+.bg-s1
+{
+  background-image: url('../img/slide-1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.bg-s2 /*Tentative de bg*/
+{
+  background-image: url('../img/slide-2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.bg-s3
+{
+  background-image: url('../img/slide-3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.bg-s4
+{
+  background-image: url('../img/slide-4.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.h-txt-slider
+{
+  height: 500px;
+  
+  background-color: blue;
+}
+
+.sliderText:hover i
+{
+  color: #da4047;
+  transition: color 0.3s;
+}
+
+/**Section2-Carousel*/
+
+.squareChip{
+  height: 15px;
+  width: 15px;
+  border: 2px solid white;
+}
+
+.carousel-container,
+.imgCarousel{
+  height: 500px;
+}
+
+.carousel-caption{
+  margin-bottom: 1.5rem;
+}
+
+.captionContainer{
+  height: 350px;
+}
+
+.lockBarTop,
+.lockBarBot{
+  width: 100%;
+  height: 35px;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+}
+
+.lockBarTop{
+  border-top: 15px solid white;
+  margin-bottom: 75px;
+}
+
+.lockBarBot{
+  border-bottom: 15px solid white;
+  margin-top: 75px;
+}
+
+/*/slider*/
+
+
+
 
 .white-txt-color
 {
@@ -767,10 +931,32 @@ a[class="page-link font-weight-bold"] {
   
 }
 
+.ftsz-40
+{
+  font-size: 40px;
+}
+
+.ftsz-20rl
+{
+  font-size: 20px;
+  /*display: inline-block;*/  
+}
+
+.ftsz-18
+{
+  font-size: 1.5em;
+}
+
 .ftsz-16
 {
   font-size: 16px;
 }
+
+.ftsz-15
+{
+  font-size: 0.9em;
+}
+
 .icon-ov-insta
 {
   /*display: inline-block;*/
@@ -779,6 +965,66 @@ a[class="page-link font-weight-bold"] {
   margin-right: 25px;
 }
 
+.grid-container 
+{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vw 100vw 100vw 100vw 100vw;
+}
+
+.gridpic-container-1
+{
+  background-size: cover;
+  background-image: url('https://scontent.cdninstagram.com/vp/2fad685350acf95142d427e190caa89e/5BECCE47/t51.2885-15/sh0.08/e35/s640x640/37353798_1732008146868545_1248718817408843776_n.jpg');
+}
+
+.gridpic-container-2
+{
+  background-size: cover;
+  background-image: url('https://scontent.cdninstagram.com/vp/e62e6d0a0ca2a6564287b232c314fa8e/5BD9F550/t51.2885-15/sh0.08/e35/s640x640/37091818_424603971381223_377070851251503104_n.jpg');
+
+}
+
+.gridpic-container-3
+{
+  background-size: cover;
+  background-image: url('https://scontent.cdninstagram.com/vp/5146c8d2760f142fddae20dc22511ebd/5BDE37C2/t51.2885-15/sh0.08/e35/s640x640/36922639_1874827042822953_6664366329316769792_n.jpg')
+}
+
+.gridpic-container-4
+{
+  background-size: cover;
+  background-image: url('https://scontent.cdninstagram.com/vp/62b45412167b48b3bdc444f9e1a7ba32/5BF08666/t51.2885-15/sh0.08/e35/s640x640/37087150_2054712778191789_3569807573248901120_n.jpg')
+}
+
+.gridpic-container-5
+{
+  background-size: cover;
+  background-image: url('https://scontent.cdninstagram.com/vp/564bf8253f2810fcc5a91123584e6237/5BF4188D/t51.2885-15/sh0.08/e35/s640x640/36934881_303640903535028_7997068241446895616_n.jpg')
+}
+
+
+
+.red-opacity
+{
+  background-color: #da4047;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  
+}
+
+.red-opacity:hover
+{
+  opacity: 0.8;
+}
+
+.zi-wrl
+{
+  z-index: 3;
+}
 
 /*==============================================================================================================================================*/
 
@@ -830,6 +1076,10 @@ a[class="page-link font-weight-bold"] {
   font-size: 12px;
 }
 
+.pl-azy
+{
+  padding-left: 30px;
+}
 .bordera
 {
   display: block; 
@@ -888,15 +1138,6 @@ a[class="page-link font-weight-bold"] {
   font-family: Lovelo;
 }
 
-.grid-container 
-{
-  display: grid;
-  height: 100%;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 1;
-  width: 100%;
-}
-
 
 .foot-end-right
 {
@@ -923,7 +1164,30 @@ a[class="page-link font-weight-bold"] {
   padding-top: 30px;
 }
 
+.idk-container
+{
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 1;
+  width: 100%;
+}
 
+@media screen and (max-width: 400px)
+{
+  .presentation-mb
+  {
+    height: 700px;
+  }
+
+  .grid-container 
+  {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vw 100vw 100vw 100vw 100vw;
+  }
+}
 
 @media screen and (min-width: 768px)
 {
@@ -938,6 +1202,14 @@ a[class="page-link font-weight-bold"] {
  {
     border: none;
  }
+
+ .grid-container 
+  {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 50vw 50vw;
+  }
 
 }
 
@@ -966,10 +1238,11 @@ a[class="page-link font-weight-bold"] {
     border: 5px solid white;
   }
 
+  
 }
 
 
-@media screen and (min-width: 1280px)
+@media screen and (min-width: 1200px)
 {
   .bordera
   {
@@ -1002,6 +1275,16 @@ a[class="page-link font-weight-bold"] {
   {
     line-height: 50px;
   }
+
+  .grid-container 
+  {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows:  20vw;
+  }
+
+
 }
 
 
